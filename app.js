@@ -2,8 +2,8 @@ const express = require("express");
 const findFreePort = require('find-free-port');
 const cors = require("cors");
 const crypto = require("crypto");
-const movies = require("./movies");
-const { validateMovie, validatePartialMovie } = require("./schemas/movies");
+const movies = require('./Schemas/movies');
+const { validateMovie, validatePartialMovie } = require("./Schemas/movies");
 
 const app = express();
 app.use(express.json());
